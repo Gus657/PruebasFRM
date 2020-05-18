@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayuda</title>
+
+    <style>
+    .main{
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        margin: auto;
+        width: 90%;
+        height: auto;
+        background-color: white;
+    }
+    .header{
+        width: 90%;
+        height: auto;
+        color: black;
+        display: flex;
+        flex-direction: row; 
+    }
+    .footer{
+        background-color: ghostwhite;
+    }
+   h1 {
+       margin: 5%;
+        text-align: center;
+   }
+    .logo{
+        margin-right: 10%;
+        width: 250px;
+        height: 125px;
+    }
+    #index{
+       text-align: center;
+       
+    }
+    a{
+        color: black;
+        font-weight: 700;
+        text-decoration: none;
+    }
+    .text{
+        height: auto;
+        width: 100%;
+        text-align: justify;
+    }
+    .img{
+        margin: auto;
+        
+    }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="header">
+            <img src="https://raw.githubusercontent.com/Gus657/Imagenes/master/risko.jpg" alt="RISKO" class="logo">
+            <h1>Ayuda Mantenimiento de Empresas</h1>
+        </div>
+        <br>
+
+        <h2 id="index">Indice</h2>
+        <ul>
+            <li><a href="#T1">Ingreso</a></li>
+            <li><a href="#T2">Modificación</a></li>
+            <li><a href="#T3">Guardar</a></li>
+            <li><a href="#T4">Cancelar</a></li>
+            <li><a href="#T5">Eliminación</a></li>
+            <li><a href="#T6">Refrescar</a></li>
+            <li><a href="#T7">Movimientos en Registros</a></li>
+            <li><a href="#T8">Salir</a></li>
+          </ul>
+        <br>
+
+        <div class="content">
+            <h2 id="T1">Ingreso</h2>
+            <p class="text">
+                Presionando esta opción se activarán los campos necesarios para realizar un ingreso al este mantenimiento, este bóton puede aparecer inactivo debído a los permisos de su Usuario.
+            </p>
+            <center>
+                <img src="img/5111-3.png" alt="IMG" class="img">
+            </center>
+            <br>
+
+            
+            <h2 id="T2">Modificación</h2>
+            <p class="text">
+                Esta opción permitirá al Usuario cambiar los valores de un registro en específico, para ello debemos seleccionar el registro a modificar y se copiarán los valores almacenado a los campos para ser modificados, para hacer efectivo el cambio debemos usar la opción Guardar.
+            </p>
+            <center>
+                <img src="img/5111-4.png" alt="IMG" class="img">
+            </center>
+            <br>
+
+
+            <h2 id="T3">Guardar</h2>
+            <p class="text">
+               Esta opcion permite hacer permanentes las acciones con los datos dde un mantenimiento, utilizaremos Guardar cuando deseemos almacenar un registro nuevo ó hacer efectiva una modificación.
+            </p>
+            <center>
+                <img src="img/5111-5.png" alt="IMG" class="img">
+            </center>
+
+            <h2 id="T4">Cancelar</h2>
+            <p class="text">
+               Esta opcion permite abandonar los cambios que aún no han sido guardados, devolviendo el navegador a un estado inicial.
+            </p>
+            <center>
+                <img src="img/5111-6.png" alt="IMG" class="img">
+            </center>
+
+            <h2 id="T5">Eliminación</h2>
+            <p class="text">
+               Esta opción permitirá que registros sean eliminados, es decir su estado pase a ser 0, esta opción solicitará que se presione 2 veces el bóton y desplegará un aviso de lo que se desea realizar, si deseamos continuar daremos en ok, de lo contrario lo cancelaremos.
+            </p>
+            <center>
+                <img src="img/5111-7.png" alt="IMG" class="img">
+            </center>
+
+            <h2 id="T6">Refrescar</h2>
+            <p class="text">
+               Esta opción permitirá que la tabla que muestra el mantenimiento sea actualizada, para ello debemos presionar el bóton indicado y se traeran los útimos datos registrados.
+            </p>
+            <center>
+                <img src="img/5111-8.png" alt="IMG" class="img">
+            </center>
+
+            <h2 id="T7">Movernos entre Registros</h2>
+            <p class="text">
+               Estas opciones permitirán podamos movernos en los registros de la tabla, podremos ir al inicio de la tabla, al final de la tabla, movernos un solo registro arriba o uno solo abajo.
+            <center>
+                <img src="img/5111-9.png" alt="IMG" class="img">
+            </center>
+
+            <h2 id="T8">Salir</h2>
+            <p class="text">
+              Con esta opción se cerrará la vista actual, de tener acciones pendientes, se consultará que habrá de realizarse, guardar, u olvidar los registros pendientes.
+            </p>
+            <center>
+                <img src="img/5111-10.png" alt="IMG" class="img">
+            </center>
+        </div>
+    </div>
+    <br>
+    <div class="footer">
+        <center>
+            <br>
+            <p>Risko Developers 2020</p>
+            <br>
+        </center>
+       
+    </div>
+</body>
+</html>

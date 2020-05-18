@@ -1,0 +1,12 @@
+C:\Users\edgar\source\repos\ComboAuto\CapaControlador\bin\Debug\CapaControlador.dll
+C:\Users\edgar\source\repos\ComboAuto\CapaControlador\bin\Debug\CapaControlador.pdb
+C:\Users\edgar\source\repos\ComboAuto\CapaControlador\obj\Debug\CapaControlador.csprojAssemblyReference.cache
+C:\Users\edgar\source\repos\ComboAuto\CapaControlador\obj\Debug\CapaControlador.csproj.CoreCompileInputs.cache
+C:\Users\edgar\source\repos\ComboAuto\CapaControlador\obj\Debug\CapaControlador.dll
+C:\Users\edgar\source\repos\ComboAuto\CapaControlador\obj\Debug\CapaControlador.pdb
+C:\Users\gganp\Desktop\ERP-RUP\FRM\FRM-Conta\FRM\DLLS\ComboAuto\ComboAuto\CapaControlador\bin\Debug\CapaControlador.dll
+C:\Users\gganp\Desktop\ERP-RUP\FRM\FRM-Conta\FRM\DLLS\ComboAuto\ComboAuto\CapaControlador\bin\Debug\CapaControlador.pdb
+C:\Users\gganp\Desktop\ERP-RUP\FRM\FRM-Conta\FRM\DLLS\ComboAuto\ComboAuto\CapaControlador\obj\Debug\CapaControlador.csprojAssemblyReference.cache
+C:\Users\gganp\Desktop\ERP-RUP\FRM\FRM-Conta\FRM\DLLS\ComboAuto\ComboAuto\CapaControlador\obj\Debug\CapaControlador.csproj.CoreCompileInputs.cache
+C:\Users\gganp\Desktop\ERP-RUP\FRM\FRM-Conta\FRM\DLLS\ComboAuto\ComboAuto\CapaControlador\obj\Debug\CapaControlador.dll
+C:\Users\gganp\Desktop\ERP-RUP\FRM\FRM-Conta\FRM\DLLS\ComboAuto\ComboAuto\CapaControlador\obj\Debug\CapaControlador.pdb

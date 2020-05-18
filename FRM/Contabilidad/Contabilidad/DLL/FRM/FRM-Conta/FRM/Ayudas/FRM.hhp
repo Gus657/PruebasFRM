@@ -1,0 +1,25 @@
+[OPTIONS]
+Compatibility=1.1 or later
+Compiled file=FRM.chm
+Contents file=FRM.hhc
+Default Window=Ayuda FRM
+Display compile progress=No
+Language=0x100a Español (Guatemala)
+
+[WINDOWS]
+Ayuda FRM=,"FRM.hhc",,"MantenimientoCuentasContables.html","MantenimientoCuentasContables.html",,,,,0x23520,,0x387e,,,,,,,,0
+
+
+[FILES]
+MantenimientoCuentasContables.html
+MantenimientoEmpresas.html
+MantenimientoTipoCuentasContables.html
+MantenimientoTipoPoliza.html
+ProcesoBalanceGeneral.html
+ProcesoBalances.html
+ProcesoDiario.html
+ProcesoEstadoDeResultados.html
+ProcesoMayor.html
+
+[INFOTYPES]
+

@@ -1,0 +1,30 @@
+C:\Users\Randy\source\repos\FRM\CapaControladorFRM\bin\Debug\CapaControladorFRM.dll
+C:\Users\Randy\source\repos\FRM\CapaControladorFRM\bin\Debug\CapaControladorFRM.pdb
+C:\Users\Randy\source\repos\FRM\CapaControladorFRM\obj\Debug\CapaControladorFRM.csprojAssemblyReference.cache
+C:\Users\Randy\source\repos\FRM\CapaControladorFRM\obj\Debug\CapaControladorFRM.csproj.CoreCompileInputs.cache
+C:\Users\Randy\source\repos\FRM\CapaControladorFRM\obj\Debug\CapaControladorFRM.dll
+C:\Users\Randy\source\repos\FRM\CapaControladorFRM\obj\Debug\CapaControladorFRM.pdb
+C:\Users\Randy\Desktop\UMG\9.no Semestre\Ingeniería de Software\2do Parcial\Proyecto 2\Software\FRM\CapaControladorFRM\bin\Debug\CapaControladorFRM.dll
+C:\Users\Randy\Desktop\UMG\9.no Semestre\Ingeniería de Software\2do Parcial\Proyecto 2\Software\FRM\CapaControladorFRM\bin\Debug\CapaControladorFRM.pdb
+C:\Users\Randy\Desktop\UMG\9.no Semestre\Ingeniería de Software\2do Parcial\Proyecto 2\Software\FRM\CapaControladorFRM\obj\Debug\CapaControladorFRM.csprojAssemblyReference.cache
+C:\Users\Randy\Desktop\UMG\9.no Semestre\Ingeniería de Software\2do Parcial\Proyecto 2\Software\FRM\CapaControladorFRM\obj\Debug\CapaControladorFRM.csproj.CoreCompileInputs.cache
+C:\Users\Randy\Desktop\UMG\9.no Semestre\Ingeniería de Software\2do Parcial\Proyecto 2\Software\FRM\CapaControladorFRM\obj\Debug\CapaControladorFRM.dll
+C:\Users\Randy\Desktop\UMG\9.no Semestre\Ingeniería de Software\2do Parcial\Proyecto 2\Software\FRM\CapaControladorFRM\obj\Debug\CapaControladorFRM.pdb
+C:\Users\gganp\Desktop\ERP-RUP\FRM\FRM-Gustavo-Randy\FRM\CapaControladorFRM\bin\Debug\CapaControladorFRM.dll
+C:\Users\gganp\Desktop\ERP-RUP\FRM\FRM-Gustavo-Randy\FRM\CapaControladorFRM\bin\Debug\CapaControladorFRM.pdb
+C:\Users\gganp\Desktop\ERP-RUP\FRM\FRM-Gustavo-Randy\FRM\CapaControladorFRM\obj\Debug\CapaControladorFRM.csproj.CoreCompileInputs.cache
+C:\Users\gganp\Desktop\ERP-RUP\FRM\FRM-Gustavo-Randy\FRM\CapaControladorFRM\obj\Debug\CapaControladorFRM.dll
+C:\Users\gganp\Desktop\ERP-RUP\FRM\FRM-Gustavo-Randy\FRM\CapaControladorFRM\obj\Debug\CapaControladorFRM.pdb
+C:\Users\gganp\Desktop\ERP-RUP\FRM\FRM-Gustavo-Randy\FRM\CapaControladorFRM\obj\Debug\CapaControladorFRM.csprojAssemblyReference.cache
+C:\Users\gganp\Desktop\FRM-Gustavo-Randy-master\FRM\CapaControladorFRM\bin\Debug\CapaControladorFRM.dll
+C:\Users\gganp\Desktop\FRM-Gustavo-Randy-master\FRM\CapaControladorFRM\bin\Debug\CapaControladorFRM.pdb
+C:\Users\gganp\Desktop\FRM-Gustavo-Randy-master\FRM\CapaControladorFRM\obj\Debug\CapaControladorFRM.csprojAssemblyReference.cache
+C:\Users\gganp\Desktop\FRM-Gustavo-Randy-master\FRM\CapaControladorFRM\obj\Debug\CapaControladorFRM.csproj.CoreCompileInputs.cache
+C:\Users\gganp\Desktop\FRM-Gustavo-Randy-master\FRM\CapaControladorFRM\obj\Debug\CapaControladorFRM.dll
+C:\Users\gganp\Desktop\FRM-Gustavo-Randy-master\FRM\CapaControladorFRM\obj\Debug\CapaControladorFRM.pdb
+C:\Users\gganp\Desktop\FRM-CONTA\FRM\CapaControladorFRM\bin\Debug\CapaControladorFRM.dll
+C:\Users\gganp\Desktop\FRM-CONTA\FRM\CapaControladorFRM\bin\Debug\CapaControladorFRM.pdb
+C:\Users\gganp\Desktop\FRM-CONTA\FRM\CapaControladorFRM\obj\Debug\CapaControladorFRM.csprojAssemblyReference.cache
+C:\Users\gganp\Desktop\FRM-CONTA\FRM\CapaControladorFRM\obj\Debug\CapaControladorFRM.csproj.CoreCompileInputs.cache
+C:\Users\gganp\Desktop\FRM-CONTA\FRM\CapaControladorFRM\obj\Debug\CapaControladorFRM.dll
+C:\Users\gganp\Desktop\FRM-CONTA\FRM\CapaControladorFRM\obj\Debug\CapaControladorFRM.pdb
