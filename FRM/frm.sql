@@ -1,4 +1,3 @@
-
 CREATE DATABASE IF NOT EXISTS frm;
 USE frm;
 
@@ -29,6 +28,14 @@ CREATE TABLE `balances` (
   `estado` tinyint(4) NOT NULL DEFAULT '1'
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+--
+-- Volcado de datos para la tabla `balances`
+--
+
+INSERT INTO `balances` (`id_balance`, `id_libro_mayor`, `fecha`, `estado`) VALUES
+(1, 1, '2020-05-18', 1),
+(2, 2, '2020-05-18', 1);
+
 -- --------------------------------------------------------
 
 --
@@ -45,6 +52,44 @@ CREATE TABLE `balances_detalles` (
   `acreedor` float NOT NULL DEFAULT '0'
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+--
+-- Volcado de datos para la tabla `balances_detalles`
+--
+
+INSERT INTO `balances_detalles` (`numero`, `id_balance`, `cuenta_contable`, `debe`, `haber`, `deudor`, `acreedor`) VALUES
+(1, 1, 'ACREEDORES', 0, 1000, 0, 1000),
+(1, 2, 'ACREEDORES', 0, 1000, 0, 1000),
+(2, 1, 'BANCOS', 13600, 0, 13600, 0),
+(2, 2, 'BANCOS', 13600, 0, 13600, 0),
+(3, 1, 'CAJA', 34800, 1820, 32980, 0),
+(3, 2, 'CAJA', 34800, 1820, 32980, 0),
+(4, 1, 'CAJA GENERAL', 0, 100, 0, 100),
+(4, 2, 'CAJA GENERAL', 0, 100, 0, 100),
+(5, 1, 'CAPITAL', 0, 172840, 0, 172840),
+(5, 2, 'CAPITAL', 0, 172840, 0, 172840),
+(6, 1, 'CLIENTES', 7500, 1728, 5772, 0),
+(6, 2, 'CLIENTES', 7500, 1728, 5772, 0),
+(7, 1, 'COMPRAS', 1250, 0, 1250, 0),
+(7, 2, 'COMPRAS', 1250, 0, 1250, 0),
+(8, 1, 'DESCUENTOS SOBRE VENTAS', 650, 0, 650, 0),
+(8, 2, 'DESCUENTOS SOBRE VENTAS', 650, 0, 650, 0),
+(9, 1, 'DOCUMENTOS POR PAGAR', 0, 3500, 0, 3500),
+(9, 2, 'DOCUMENTOS POR PAGAR', 0, 3500, 0, 3500),
+(10, 1, 'IVA POR COBRAR', 16410, 0, 16410, 0),
+(10, 2, 'IVA POR COBRAR', 16410, 0, 16410, 0),
+(11, 1, 'IVA POR PAGAR', 78, 1907.14, 0, 1829.14),
+(11, 2, 'IVA POR PAGAR', 78, 1907.14, 0, 1829.14),
+(12, 1, 'MERCADERIAS', 35000, 0, 35000, 0),
+(12, 2, 'MERCADERIAS', 35000, 0, 35000, 0),
+(13, 1, 'MOBILIARIO Y EQUIPO', 15500, 0, 15500, 0),
+(13, 2, 'MOBILIARIO Y EQUIPO', 15500, 0, 15500, 0),
+(14, 1, 'PROVEEDORES', 0, 11000, 0, 11000),
+(14, 2, 'PROVEEDORES', 0, 11000, 0, 11000),
+(15, 1, 'VEHICULOS', 85000, 0, 85000, 0),
+(15, 2, 'VEHICULOS', 85000, 0, 85000, 0),
+(16, 1, 'VENTAS', 0, 15892.9, 0, 15892.9),
+(16, 2, 'VENTAS', 0, 15892.9, 0, 15892.9);
+
 -- --------------------------------------------------------
 
 --
@@ -59,6 +104,25 @@ CREATE TABLE `balance_general_detalles` (
   `estado` tinyint(1) DEFAULT '1'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
+--
+-- Volcado de datos para la tabla `balance_general_detalles`
+--
+
+INSERT INTO `balance_general_detalles` (`numero_movimiento`, `id_balance_general`, `cuenta_contable`, `saldo`, `estado`) VALUES
+(1, 1, 'CAJA', 32980, NULL),
+(2, 1, 'BANCOS', 13600, NULL),
+(3, 1, 'CLIENTES', 5772, NULL),
+(4, 1, 'IVA POR COBRAR', 16410, NULL),
+(5, 1, 'MERCADERIAS', 35000, NULL),
+(6, 1, 'MOBILIARIO Y EQUIPO', 15500, NULL),
+(7, 1, 'VEHICULOS', 85000, NULL),
+(8, 1, 'IVA POR PAGAR', 1829.14, NULL),
+(9, 1, 'ACREEDORES', 1000, NULL),
+(10, 1, 'PROVEEDORES', 11000, NULL),
+(11, 1, 'DOCUMENTOS POR PAGAR', 3500, NULL),
+(12, 1, 'CAPITAL', 172840, NULL),
+(13, 1, 'Ganacia del Ejercicio', 14093, NULL);
+
 -- --------------------------------------------------------
 
 --
@@ -71,6 +135,13 @@ CREATE TABLE `balance_general_encabezados` (
   `fecha` date NOT NULL,
   `estado` tinyint(1) DEFAULT '1'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Volcado de datos para la tabla `balance_general_encabezados`
+--
+
+INSERT INTO `balance_general_encabezados` (`id_balance_general`, `id_libro_balance`, `fecha`, `estado`) VALUES
+(1, 1, '2020-05-18', 1);
 
 -- --------------------------------------------------------
 
@@ -249,6 +320,13 @@ CREATE TABLE `estado_de_resultados` (
   `estado` tinyint(1) DEFAULT '1'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
+--
+-- Volcado de datos para la tabla `estado_de_resultados`
+--
+
+INSERT INTO `estado_de_resultados` (`id_estado_de_resultado`, `id_libro_balance`, `fecha`, `estado`) VALUES
+(1, 1, '2020-05-18', 1);
+
 -- --------------------------------------------------------
 
 --
@@ -262,6 +340,16 @@ CREATE TABLE `estado_de_resultados_detalles` (
   `saldo` float DEFAULT '0',
   `estado` tinyint(1) DEFAULT '1'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Volcado de datos para la tabla `estado_de_resultados_detalles`
+--
+
+INSERT INTO `estado_de_resultados_detalles` (`numero_movimiento`, `id_estado_de_resultado`, `cuenta_contable`, `saldo`, `estado`) VALUES
+(2, 1, 'COMPRAS', 1250, NULL),
+(3, 1, 'DESCUENTOS SOBRE VENTAS', 650, NULL),
+(4, 1, 'Ganacia del Ejercicio', 13993, NULL),
+(1, 1, 'VENTAS', 15892.9, NULL);
 
 -- --------------------------------------------------------
 
@@ -304,6 +392,7 @@ INSERT INTO `libro_diario_detalles` (`numero_movimiento`, `id_libro_diario`, `id
 (0, 1, 6, 'CAJA', 9520, 0, 1),
 (0, 1, 7, 'BANCOS', 100, 0, 1),
 (0, 1, 8, 'CAJA', 1000, 0, 1),
+(0, 1, 9, 'CAJA', 1000, 0, 1),
 (1, 1, 1, 'BANCOS', 13500, 0, 1),
 (1, 1, 2, 'IVA POR COBRAR', 420, 0, 1),
 (1, 1, 3, 'CLIENTES', 6500, 0, 1),
@@ -312,12 +401,14 @@ INSERT INTO `libro_diario_detalles` (`numero_movimiento`, `id_libro_diario`, `id
 (1, 1, 6, 'VENTAS', 0, 8500, 1),
 (1, 1, 7, 'CAJA GENERAL', 0, 100, 1),
 (1, 1, 8, 'CLIENTES', 0, 1000, 1),
+(1, 1, 9, 'VENTAS', 0, 892.86, 1),
 (2, 1, 1, 'CLIENTES', 1000, 0, 1),
 (2, 1, 2, 'CAJA', 0, 420, 1),
 (2, 1, 3, 'VENTAS', 0, 6500, 1),
 (2, 1, 4, 'CAJA', 0, 1400, 1),
 (2, 1, 5, 'CLIENTES', 0, 728, 1),
 (2, 1, 6, 'IVA POR PAGAR', 0, 1020, 1),
+(2, 1, 9, 'IVA POR PAGAR', 0, 107.14, 1),
 (3, 1, 1, 'IVA POR COBRAR', 15840, 0, 1),
 (3, 1, 2, 'DOCUMENTOS POR PAGAR', 0, 3500, 1),
 (3, 1, 3, 'IVA POR PAGAR', 0, 780, 1),
@@ -361,6 +452,44 @@ CREATE TABLE `libro_mayor_cuentas` (
   `estado` tinyint(1) NOT NULL DEFAULT '1'
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+--
+-- Volcado de datos para la tabla `libro_mayor_cuentas`
+--
+
+INSERT INTO `libro_mayor_cuentas` (`cuenta_contable`, `id_libro_mayor`, `estado`) VALUES
+('ACREEDORES', 1, 1),
+('BANCOS', 1, 1),
+('CAJA', 1, 1),
+('CAJA GENERAL', 1, 1),
+('CAPITAL', 1, 1),
+('CLIENTES', 1, 1),
+('COMPRAS', 1, 1),
+('DESCUENTOS SOBRE VENTAS', 1, 1),
+('DOCUMENTOS POR PAGAR', 1, 1),
+('IVA POR COBRAR', 1, 1),
+('IVA POR PAGAR', 1, 1),
+('MERCADERIAS', 1, 1),
+('MOBILIARIO Y EQUIPO', 1, 1),
+('PROVEEDORES', 1, 1),
+('VEHICULOS', 1, 1),
+('VENTAS', 1, 1),
+('ACREEDORES', 2, 1),
+('BANCOS', 2, 1),
+('CAJA', 2, 1),
+('CAJA GENERAL', 2, 1),
+('CAPITAL', 2, 1),
+('CLIENTES', 2, 1),
+('COMPRAS', 2, 1),
+('DESCUENTOS SOBRE VENTAS', 2, 1),
+('DOCUMENTOS POR PAGAR', 2, 1),
+('IVA POR COBRAR', 2, 1),
+('IVA POR PAGAR', 2, 1),
+('MERCADERIAS', 2, 1),
+('MOBILIARIO Y EQUIPO', 2, 1),
+('PROVEEDORES', 2, 1),
+('VEHICULOS', 2, 1),
+('VENTAS', 2, 1);
+
 -- --------------------------------------------------------
 
 --
@@ -378,6 +507,80 @@ CREATE TABLE `libro_mayor_detalles` (
   `estado` tinyint(1) DEFAULT '1'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
+--
+-- Volcado de datos para la tabla `libro_mayor_detalles`
+--
+
+INSERT INTO `libro_mayor_detalles` (`numero_detalle`, `id_libro_mayor`, `id_partida`, `cuenta_mayor`, `cuenta_contable`, `debe`, `haber`, `estado`) VALUES
+(1, 1, 1, 'ACREEDORES', 'CLIENTES', 1000, 0, 1),
+(1, 2, 1, 'ACREEDORES', 'CLIENTES', 1000, 0, 1),
+(2, 1, 7, 'BANCOS', 'CAJA GENERAL', 0, 100, 1),
+(2, 2, 7, 'BANCOS', 'CAJA GENERAL', 0, 100, 1),
+(3, 1, 1, 'BANCOS', 'VARIOS', 0, 13500, 1),
+(3, 2, 1, 'BANCOS', 'VARIOS', 0, 13500, 1),
+(4, 1, 1, 'CAJA', 'VARIOS', 0, 22500, 1),
+(4, 2, 1, 'CAJA', 'VARIOS', 0, 22500, 1),
+(5, 1, 3, 'CAJA', 'IVA POR PAGAR', 0, 780, 1),
+(5, 2, 3, 'CAJA', 'IVA POR PAGAR', 0, 780, 1),
+(6, 1, 6, 'CAJA', 'VARIOS', 0, 9520, 1),
+(6, 2, 6, 'CAJA', 'VARIOS', 0, 9520, 1),
+(7, 1, 8, 'CAJA', 'CLIENTES', 0, 1000, 1),
+(7, 2, 8, 'CAJA', 'CLIENTES', 0, 1000, 1),
+(8, 1, 9, 'CAJA', 'VARIOS', 0, 1000, 1),
+(8, 2, 9, 'CAJA', 'VARIOS', 0, 1000, 1),
+(9, 1, 2, 'CAJA', 'IVA POR COBRAR', 420, 0, 1),
+(9, 2, 2, 'CAJA', 'IVA POR COBRAR', 420, 0, 1),
+(10, 1, 4, 'CAJA', 'VARIOS', 1400, 0, 1),
+(10, 2, 4, 'CAJA', 'VARIOS', 1400, 0, 1),
+(11, 1, 7, 'CAJA GENERAL', 'BANCOS', 100, 0, 1),
+(11, 2, 7, 'CAJA GENERAL', 'BANCOS', 100, 0, 1),
+(12, 1, 1, 'CAPITAL', 'VARIOS', 172840, 0, 1),
+(12, 2, 1, 'CAPITAL', 'VARIOS', 172840, 0, 1),
+(13, 1, 3, 'CLIENTES', 'VENTAS', 0, 6500, 1),
+(13, 2, 3, 'CLIENTES', 'VENTAS', 0, 6500, 1),
+(14, 1, 1, 'CLIENTES', 'ACREEDORES', 0, 1000, 1),
+(14, 2, 1, 'CLIENTES', 'ACREEDORES', 0, 1000, 1),
+(15, 1, 8, 'CLIENTES', 'CAJA', 1000, 0, 1),
+(15, 2, 8, 'CLIENTES', 'CAJA', 1000, 0, 1),
+(16, 1, 5, 'CLIENTES', 'VARIOS', 728, 0, 1),
+(16, 2, 5, 'CLIENTES', 'VARIOS', 728, 0, 1),
+(17, 1, 4, 'COMPRAS', 'VARIOS', 0, 1250, 1),
+(17, 2, 4, 'COMPRAS', 'VARIOS', 0, 1250, 1),
+(18, 1, 5, 'DESCUENTOS SOBRE VENTAS', 'VARIOS', 0, 650, 1),
+(18, 2, 5, 'DESCUENTOS SOBRE VENTAS', 'VARIOS', 0, 650, 1),
+(19, 1, 2, 'DOCUMENTOS POR PAGAR', 'MOBILIARIO Y EQUIPO', 3500, 0, 1),
+(19, 2, 2, 'DOCUMENTOS POR PAGAR', 'MOBILIARIO Y EQUIPO', 3500, 0, 1),
+(20, 1, 2, 'IVA POR COBRAR', 'CAJA', 0, 420, 1),
+(20, 2, 2, 'IVA POR COBRAR', 'CAJA', 0, 420, 1),
+(21, 1, 4, 'IVA POR COBRAR', 'VARIOS', 0, 150, 1),
+(21, 2, 4, 'IVA POR COBRAR', 'VARIOS', 0, 150, 1),
+(22, 1, 1, 'IVA POR COBRAR', 'VARIOS', 0, 15840, 1),
+(22, 2, 1, 'IVA POR COBRAR', 'VARIOS', 0, 15840, 1),
+(23, 1, 5, 'IVA POR PAGAR', 'VARIOS', 0, 78, 1),
+(23, 2, 5, 'IVA POR PAGAR', 'VARIOS', 0, 78, 1),
+(24, 1, 6, 'IVA POR PAGAR', 'VARIOS', 1020, 0, 1),
+(24, 2, 6, 'IVA POR PAGAR', 'VARIOS', 1020, 0, 1),
+(25, 1, 9, 'IVA POR PAGAR', 'VARIOS', 107.14, 0, 1),
+(25, 2, 9, 'IVA POR PAGAR', 'VARIOS', 107.14, 0, 1),
+(26, 1, 3, 'IVA POR PAGAR', 'CAJA', 780, 0, 1),
+(26, 2, 3, 'IVA POR PAGAR', 'CAJA', 780, 0, 1),
+(27, 1, 1, 'MERCADERIAS', 'VARIOS', 0, 35000, 1),
+(27, 2, 1, 'MERCADERIAS', 'VARIOS', 0, 35000, 1),
+(28, 1, 2, 'MOBILIARIO Y EQUIPO', 'DOCUMENTOS POR PAGAR', 0, 3500, 1),
+(28, 2, 2, 'MOBILIARIO Y EQUIPO', 'DOCUMENTOS POR PAGAR', 0, 3500, 1),
+(29, 1, 1, 'MOBILIARIO Y EQUIPO', 'VARIOS', 0, 12000, 1),
+(29, 2, 1, 'MOBILIARIO Y EQUIPO', 'VARIOS', 0, 12000, 1),
+(30, 1, 1, 'PROVEEDORES', 'VARIOS', 11000, 0, 1),
+(30, 2, 1, 'PROVEEDORES', 'VARIOS', 11000, 0, 1),
+(31, 1, 1, 'VEHICULOS', 'VARIOS', 0, 85000, 1),
+(31, 2, 1, 'VEHICULOS', 'VARIOS', 0, 85000, 1),
+(32, 1, 6, 'VENTAS', 'VARIOS', 8500, 0, 1),
+(32, 2, 6, 'VENTAS', 'VARIOS', 8500, 0, 1),
+(33, 1, 9, 'VENTAS', 'VARIOS', 892.86, 0, 1),
+(33, 2, 9, 'VENTAS', 'VARIOS', 892.86, 0, 1),
+(34, 1, 3, 'VENTAS', 'CLIENTES', 6500, 0, 1),
+(34, 2, 3, 'VENTAS', 'CLIENTES', 6500, 0, 1);
+
 -- --------------------------------------------------------
 
 --
@@ -390,6 +593,14 @@ CREATE TABLE `libro_mayor_encabezados` (
   `fecha` date DEFAULT NULL,
   `estado` tinyint(1) DEFAULT '1'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Volcado de datos para la tabla `libro_mayor_encabezados`
+--
+
+INSERT INTO `libro_mayor_encabezados` (`id_libro_mayor`, `id_libro_diario`, `fecha`, `estado`) VALUES
+(1, 1, '2020-05-18', 1),
+(2, 1, '2020-05-18', 1);
 
 -- --------------------------------------------------------
 
@@ -497,7 +708,8 @@ INSERT INTO `partidas` (`id_partida`, `id_libro_diario`, `concepto`, `fecha`, `e
 (5, 1, 'Devolución de ventas', '2020-05-13', 1),
 (6, 1, 'Ventas al contado', '2020-05-13', 1),
 (7, 1, 'asds', '2020-05-17', 0),
-(8, 1, 'Ayuda', '2020-05-17', 0);
+(8, 1, 'Ayuda', '2020-05-17', 0),
+(9, 1, 'Partida', '2020-05-18', 0);
 
 -- --------------------------------------------------------
 
@@ -589,17 +801,16 @@ CREATE TABLE `tipo_cuentas` (
 
 INSERT INTO `tipo_cuentas` (`id_tipo_cuenta`, `nombre_tipo_cuenta`, `descripcion_tipo_cuenta`, `estado`) VALUES
 ('0', 'VARIOS', '0', 1),
-('1', 'ACTIVO', 'ACTIVO BRO', 1),
-('1.1', 'ACTIVO CORRIENTE', 'ME', 1),
-('1.2', 'ACTIVO NO CORRIENTE', 'NO CORRE BRO', 1),
-('2', 'PASIVO', 'Pasivo', 1),
-('2.1', 'PASIVO CORRIENTE', 'corre corre que te corre', 1),
-('2.2', 'PASIVO NO CORRIENTE', 'ESKERE', 1),
-('3.1', 'PATRIMONIO', 'XD', 1),
-('4.1', 'INGRESOS', 'S', 1),
-('5.1', 'COMPRAS', 'A', 1),
-('6.1', 'GASTOS', 'Gastos', 1),
-('9', 'Pruebad', 'Prueba', 0);
+('1', 'ACTIVO', 'Bienes de la Empresa', 1),
+('1.1', 'ACTIVO CORRIENTE', 'Bienes de la Empresa con movimiento al corto ', 1),
+('1.2', 'ACTIVO NO CORRIENTE', 'Bienes de la Empresa con movimiento al largo ', 1),
+('2', 'PASIVO', 'Obligaciones de la empresa', 1),
+('2.1', 'PASIVO CORRIENTE', 'Obligaciones de la empresa a corto plazo', 1),
+('2.2', 'PASIVO NO CORRIENTE', 'Obligaciones de la empresa a largo plazo', 1),
+('3.1', 'PATRIMONIO', 'Deudas y aportes a la empresa', 1),
+('4.1', 'INGRESOS', 'Cuentas que aumentan el patrimonio', 1),
+('5.1', 'COMPRAS', 'Adquisiciones de la empresa', 1),
+('6.1', 'GASTOS', 'Disminuyen el patrimonio', 1);
 
 -- --------------------------------------------------------
 
